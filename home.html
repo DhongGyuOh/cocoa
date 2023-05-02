@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+
+  <head>
+    <!-- <link href="styles.css" rel="stylesheet"/> -->
+    <link
+      rel="title 앞에 생기는 shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="images/cat.jpg"
+    />
+    <title>head의 title</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="구글이 필요로하는 meta 데이터" />
+    <meta property="og:image" content="images/cat.jpg" />
+    <style>
+      html{
+        background-color: darkcyan;
+      }
+      h1{
+        color: blue;
+        font-size: 50px;
+        font-weight: 1000;
+      }
+      li{
+        font-size: 30px;
+      }
+      address{
+        text-align: center;
+        color: tomato;
+      }
+      div{
+        display: inline;
+        color: brown;
+        text-align: center;
+      }
+      span{
+        display: block;
+      }
+      
+    </style>
+  </head>
+
+
+  <body>
+    <header>
+      <h1>Cocoa Clone Coding</h1>
+      <div>
+        <h2>h2는 Block이라서 한칸을 차지함</h2>
+        <span>span은 inline 이라서 여러개를 한줄에 같이 쓸수 있음</span>
+        <span>바로 이렇게</span>
+        <span>하지만 css를 통해 display 속성을 Block으로 주면 Block으로 사용가능해짐</span>
+        <span>Block은 너비와 높이를 갖고 InLine은 없음</span>
+      </div>
+    </header>
+    <main>
+    <p>p: 길이가 긴 Text를 사용할 때, block이네요</p>
+    <span>span: 짧은 Text 사용할 때</span>
+    <address>address 주소 쓸때</address>
+    <pre>pre: pre 느낌은 이렇습니다.</pre>
+    
+    <abbr title="abbr의 title">abbr: 느낌은 이렇습니다.</abbr>
+    
+    <div id="citetext">
+      <cite>cite 느낌은 이렇습니다.</cite>
+    </div>
+    
+    <mark>mark 느낌은 이렇구요.</mark>
+    
+    
+    <rt>rt는 inline 이네요</rt>
+    
+    <div>
+      <strong>strong 느낌</strong>
+    </div>
+    <div>
+      <p>2<sup>2</sup></p>
+    </div>
+    <div>
+      <h3>ul: 순서가없는 리스트</h3>
+    </div>
+    <ul>
+      <li>ul</li>
+      <li>ul</li>
+    </ul>
+    <h3>ol: 순서있는 리스트</h3>
+    <ol>
+      <li>ol</li>
+      <li>ol</li>
+    </ol>
+    <h3>a: anchor라는 뜻으로 간단하게 link 생각하면 됨</h3>
+    <a
+      href="http://www.google.com"
+      target="_blank"
+      title="이미지에 마우스를 올리면 보여지는 title"
+      download="aa.jpg"
+      >its-new</a
+    >
+    <div id="new">
+      <img
+      src="https://its-new.co.kr/_resource/images/common/logo_movie_color.png"
+    />
+    </div>
+    <div id="cat">
+      <img src="images/cat.jpg" />
+    </div>
+    <div id="video">
+      <video
+      controls
+      width="250"
+      src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+    ></video>
+
+    </div>
+
+    <audio
+      controls="enabled"
+      loop
+      src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+    ></audio>
+
+    <form>
+      <ul>
+        <li>
+          <input required placeholder="Color" type="color" />
+        </li>
+        <li>
+          <label for="profile">Profile Photo</label>
+          <input id="profile" type="file" accept=".pdf, image/*" />
+        </li>
+        <li>
+          <label for="userid">유저 아이디</label>
+          <input id="userid" required placeholder="UserID" type="email" />
+        </li>
+        <li>
+          <label for="password">비밀번호</label>
+          <input
+            id="password"
+            required
+            placeholder="Password"
+            minlength="5"
+            type="password"
+          />
+        </li>
+        <li>
+          <label for="url">URL을 입력하세요</label>
+          <input id="url" required type="url"/>
+        </li>
+        <li>
+          <input type="range"/>
+        </li>
+        <li>
+          <input type="submit" value="Log In" />
+        </li>
+      <ul>
+    </form>
+    </main>
+    <footer>
+      &copy; 2023 D.G
+    </footer>
+  </body>
+</html>
