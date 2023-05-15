@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Friend Screen</title>
+    <title>Find Screen</title>
   </head>
   <body>
     <div class="status-bar">
@@ -25,56 +25,72 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Find</h1>
       <div class="screen-header__icon">
         <span>
           <i class="fa-solid fa-magnifying-glass fa-1x"></i>
         </span>
-        <span>
-          <i class="fa-solid fa-music fa-1x"></i>
-        </span>
+
         <span>
           <i class="fa-solid fa-gear fa-1x"></i>
         </span>
       </div>
     </header>
-    <a id="friends-display-link">
-      <i class="fa-solid fa-circle-info"></i>
-      Friends' Names Display
-      <i class="fa-solid fa-chevron-right"></i>
-    </a>
 
-    <main>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            class="user-component__avatar"
-            src="https://yt3.googleusercontent.com/LOWZ9per6hyhd6swd5KEi_RmgACl6-gpXSUf91zNaY-fPb8jX13syeVo-RKLFqqUxnyqCi4S=s176-c-k-c0x00ffffff-no-rj"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">DongGyu Oh</h4>
-            <h6 class="user-component__subtitle">Good Morning</h6>
-          </div>
+    <main class="main-screen">
+      <div class="find-icons">
+        <div class="find-icons__icon">
+          <i class="fa-solid fa-qrcode fa-4x"></i>
+          <span>QR Code</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-regular fa-address-book fa-4x"></i>
+          <span>Add by Contacts</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-solid fa-fingerprint fa-4x"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-regular fa-envelope fa-4x"></i>
+          <span>Invite</span>
         </div>
       </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fas fa-chevron-up fa-xs"></i>
+      <div class="recommanded-friends">
+        <h6 class="recommanded-friends__title">Recommended Friends</h6>
+        <span class="recommanded-friends__subtitle">
+          You have to recommended friends
+        </span>
+      </div>
+      <div class="open-chat">
+        <div>
+          <h4>Open Chat</h4>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
+        <div>
+          <span>Go to Openchat Home <i class="fas fa-chevron-right"></i></span>
+        </div>
+      </div>
+      <div class="open-chat__content">
+        <div class="open-chat__column">
+          <h2>#BTS</h2>
+          <span>#BTS#ARMY</span>
+          <div class="open-chat__title">
             <img
-              class="user-component__avatar user-component__avatar--sm"
+              class="open-chat__img-sm"
               src="https://yt3.googleusercontent.com/LOWZ9per6hyhd6swd5KEi_RmgACl6-gpXSUf91zNaY-fPb8jX13syeVo-RKLFqqUxnyqCi4S=s176-c-k-c0x00ffffff-no-rj"
             />
-            <div class="user-component__text">
-              <h4 class="user-component__title">Channel</h4>
-            </div>
+            <span>802 members | </span>
+            <span>Active</span>
           </div>
-          <div class="user-component__column">
-            <span>2</span>
-            <i class="fas fa-chevron-right fa-xs"></i>
+        </div>
+        <div>
+          <img
+            class="open-chat__img"
+            src="https://yt3.googleusercontent.com/LOWZ9per6hyhd6swd5KEi_RmgACl6-gpXSUf91zNaY-fPb8jX13syeVo-RKLFqqUxnyqCi4S=s176-c-k-c0x00ffffff-no-rj"
+          />
+          <div class="open-chat__score">
+            <i class="fas fa-heart"></i>
+            <span> 326</span>
           </div>
         </div>
       </div>
@@ -84,14 +100,14 @@
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html"
-            ><i class="fa-solid fa-user fa-2x"></i
+            ><i class="fa-regular fa-user fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
             <span class="nav__notification">1</span>
-            <i class="fa-regular fa-comments fa-2x"></i>
-          </a>
+            <i class="fa-regular fa-comments fa-2x"></i
+          ></a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="find.html"
@@ -107,6 +123,7 @@
       </ul>
     </nav>
     <div class="nomobile">Your Screen Is So Big</div>
+
     <script
       src="https://kit.fontawesome.com/306967df62.js"
       crossorigin="anonymous"

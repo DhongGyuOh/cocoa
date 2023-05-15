@@ -1,0 +1,112 @@
+.find-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10pt;
+  text-align: center;
+  border-bottom: var(--main-border);
+}
+.find-icons__icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.recommanded-friends {
+  padding: 25px;
+  border-bottom: var(--main-border);
+  height: 150px;
+}
+
+.recommanded-friends__title {
+  display: flex;
+  color: rgba(0, 0, 0, 0.6);
+}
+.recommanded-friends span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.open-chat {
+  color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5px;
+}
+.open-chat__column {
+  font-size: 16px;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.open-chat__column h2 {
+  font-size: 20px;
+  padding: 5px 0px;
+  color: black;
+}
+.open-chat__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 30%;
+}
+.open-chat__img-sm {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  padding: 5px 0px;
+  margin-right: 5px;
+}
+.open-chat__content {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: var(--main-border);
+  padding: 10px 5px;
+}
+.open-chat__img-sm + span + span {
+  color: blueviolet;
+}
+.open-chat__title {
+  display: flex;
+  align-items: center;
+}
+.open-chat__score,
+.open-chat__score i {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  padding: 1px 6px;
+  font-size: 12px;
+}
+.open-chat__score i {
+  animation: heartbeat 1s linear forwards;
+}
+
+.open-chat__score:hover {
+  will-change: transform;
+  animation: heartbeat 1s linear forwards;
+}
+.open-chat__score {
+  position: absolute;
+  right: 6px;
+  bottom: 30px;
+}
+
+@keyframes heartbeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  60% {
+    color: pink;
+    transform: scale(2);
+  }
+  100% {
+    color: palevioletred;
+    transform: none;
+  }
+}
