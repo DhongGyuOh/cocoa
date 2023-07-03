@@ -1,0 +1,36 @@
+header {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-screen {
+  margin-top: 80px;
+}
+.settings-list li {
+  padding: 30px 0px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+li div:nth-child(2) {
+  color: grey;
+}
+.settings-list li:nth-child(4) {
+  margin-top: 30px;
+}
+i {
+  color: black;
+}
+.settings__setting-column {
+  padding-bottom: 15px;
+}
+.N {
+  padding: 5px 8px 5px 8px;
+  background-color: red;
+  color: white;
+  border-radius: 100%;
+}

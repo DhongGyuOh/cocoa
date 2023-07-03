@@ -27,3 +27,15 @@
 body {
   height: 1000px;
 }
+.fa-gear:hover {
+  animation: bingbing 1s linear infinite;
+  cursor: pointer;
+}
+@keyframes bingbing {
+  for {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}

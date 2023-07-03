@@ -10,6 +10,9 @@
 @import "screens/finds.css";
 @import "components/badge.css";
 @import "components/nomobile.css";
+@import "screens/chatsfriends.css";
+@import "screens/settings.css";
+@import "screens/more.css";
 body {
   color: #2e363e;
   font-family: "Nanum Gothic", sans-serif;
